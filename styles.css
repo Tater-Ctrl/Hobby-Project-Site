@@ -14,7 +14,7 @@ a {
 }
 
 a:hover {
-    color: gray;
+    color: rgba(128, 128, 128, 0.336);
 }
 
 .main {
@@ -141,7 +141,7 @@ nav ul li {
     text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
     color: white;
     margin: 0 auto;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     width: 80%;
     max-width: 575px;
     border-bottom: 2px solid white;
@@ -151,7 +151,7 @@ nav ul li {
     margin: 0 auto;
     width: 80%;
     font-size: 28px;
-    font-weight: bold;
+    font-weight: 400;
     text-align: left;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.616);
     max-width: 575px;
@@ -182,7 +182,7 @@ nav ul li {
 }
 
 .button a:hover {
-    background-color: rgb(255, 255, 255) ;
+    background-color: rgba(43, 43, 43, 0.411) ;
 }
 
 .button a:active {
@@ -367,6 +367,7 @@ footer a {
 }
 footer h3 {
     border: 2px solid white;
+    cursor: pointer;
     padding: 10px 15px;
     font-size: 20px;
     border-radius: 7px;
@@ -456,6 +457,8 @@ footer h3 {
     .section-1 div p {
         color: white;
         padding: 10px 10px;
+        font-size: 16px;
+        font-weight: 400;
         text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
         background-color: rgba(0, 0, 0, 0.3);
         border-bottom-left-radius: 7px;
@@ -488,7 +491,7 @@ footer h3 {
         padding-top: 96px;
     }
     .section-1 div h1{
-        font-size: 20px;
+        font-size: 24px;
         color: white;
         text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
         border-bottom: 2px solid white;;
@@ -500,6 +503,8 @@ footer h3 {
     .section-1 div p {
         color: white;
         padding: 10px 10px;
+        font-size: 20px;
+        font-weight: 400;
         text-shadow: 2px 2px rgba(0, 0, 0, 0.493);
         border-bottom-left-radius: 7px;
         border-bottom-right-radius: 7px;
