@@ -1,0 +1,590 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: rgb(209, 209, 209);
+    text-decoration: none;
+}
+
+a:hover {
+    color: gray;
+}
+
+.main {
+    position: relative;
+    top: 52px;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 7px;
+    margin: 10px 0px;
+    cursor: pointer;
+    background-color: #ffa724;
+    outline: none;
+    border: none;
+}
+
+button:hover {
+    background-color: #ffbf60;
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+/* NAV BAR START */
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-height: 100px;
+    transition: max-height 0.25s ease-in;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(22, 22, 22);
+    z-index: 13;
+}
+
+nav a {
+    height: auto;
+    width: auto;
+}
+#logo {
+    max-height: 65px;
+    transition: max-height 0.25s ease-in;
+}
+
+nav .nav-full {
+    list-style-type: none;
+    display: flex;
+}
+
+nav .burger {
+    display: none;
+    overflow: hidden;
+}
+nav ul li {
+    padding: 0 10px;
+    font-size: 20px;
+}
+.menu {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 12;
+    left: 270px;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.menu .menu-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    padding-left: 20px;
+    font-size: 24px;
+    line-height: 48px;
+    background-color: rgb(44, 44, 44);
+    width: 200px;
+    height: 100%;
+}
+#burger1 {
+    transition: 0.5s;
+    position: relative;
+    transform: rotateZ(0deg);
+    top: 0px;
+}
+#burger2 {
+    transition: 0.5s;
+    position: relative;
+    left: 0;
+}
+#burger3 {
+    transition: 0.5s;
+    position: relative;
+    transform: rotateZ(0deg);
+    bottom: 0px;
+}
+/* NAV BAR END */
+
+/*HOME PAGE START*/
+
+/* SECTION-2 OF HOME PAGE (START) */
+.section-1 {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 48px;
+    padding-bottom: 48px;
+    padding-top: 96px;
+    height: auto;
+    background-color: beige;
+}
+
+.section-1 div h1{
+    font-size: 36px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+    color: white;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    width: 80%;
+    max-width: 575px;
+    border-bottom: 2px solid white;
+}
+.section-1 div p {
+    color: white;
+    margin: 0 auto;
+    width: 80%;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.616);
+    max-width: 575px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.button {
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.button a {
+    padding: 15px 30px;
+    color: white;
+    background-color: rgba(37, 37, 37, 0.555);
+    font-size: 24px;
+    border: 1px solid white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.button a:hover {
+    background-color: rgb(255, 255, 255) ;
+}
+
+.button a:active {
+    transform: translateY(1px);
+}
+/* SECTION-1 OF HOME PAGE (END) */
+
+/* SECTION-2 OF HOME PAGE (START) */
+.section-2 {
+    padding-bottom: 24px;
+}
+
+.section-2 .container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.section-2 article {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 24px;
+}
+.section-2 article img {
+    height: 80px;
+    width: auto;
+}
+#codecamp {
+    border-radius: 100%;
+}
+
+.section-2 h1 {
+    margin: 0 auto;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 24px;
+    color: #464638;
+    width: 80%;
+    border-bottom: 2px solid #464638;
+}
+
+.section-2 .box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+    color: #464638;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    max-width: 690px;
+}
+
+.section-2 .box {
+    margin: 10px 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.301);
+    border-radius: 7px;
+    min-width: 220px;
+    max-width: 325px;
+    padding: 20px 10px;
+}
+
+.section-2 .box:hover {
+    transition: 0.3s;
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.301);
+}
+
+/*SECTION-2 OF HOME PAGE (END) */
+/*SECTION-3 OF HOME PAGE (START)*/
+.section-3 .box-container {
+    padding: 0 10px;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    padding-bottom: 60px;
+}
+
+.section-3 .box-container h1{
+    font-size: 24px;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.section-3 .container {
+    width: 90%;
+}
+
+.section-3 .container p {
+    text-align: left;
+}
+
+.section-3 img {
+    width: 100%;
+    height: auto;
+}
+
+.section-3 button {
+    padding: 10px 15px;
+    font-size: 20px;
+}
+.about-codecademy {
+    padding-top: 10px;
+    background-color: #8011cf;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 6px;
+    color: white;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+}
+
+.about-odinproject {
+    position: relative;
+    margin-top: -50px;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    padding-top: 10px;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 6px;
+    color: #313131;
+}
+.about-freecodecamp {
+    position: relative;
+    margin-top: -50px;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    padding-top: 10px;
+    background-color: #3b3b4f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 6px;
+    color: white;
+}
+.about-selfstudy {
+    position: relative;
+    margin-top: -50px;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    padding-top: 10px;
+    background-color: #ffd89d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #313131; 
+}
+.about-selfstudy .box-container {
+    padding-bottom: 30px;
+}
+
+footer {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;   
+    padding-left: 10px;
+    background-color: rgb(22, 22, 22);
+}
+footer ul {
+    margin-bottom: 50px;
+}
+footer ul li {
+    list-style-type: circle;
+}
+footer p {
+    color: white;
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+footer a {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    width: auto;
+}
+footer h3 {
+    border: 2px solid white;
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 7px;
+    background-color: rgb(70, 70, 70);
+}
+.horizontal-container {
+    display: none;
+}
+
+/*HOME PAGE END */
+
+/* ADJUST TOP NAV WHEN BELOW 768PX (START)*/
+@media only screen and (max-width: 767px) {
+    .section-1 div h1 {
+        margin-bottom: 10px;
+    }
+    
+    nav a {
+        position: absolute;
+        margin: 0 auto;
+    }
+
+    nav .nav-full {
+        display: none;
+    }
+    nav .burger {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right:3%;
+        height: 40px;
+        width: 40px;
+        list-style-type: none;
+        cursor: pointer;
+    }
+
+    nav .burger li {
+        height: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav .burger li div {
+        background-color: aliceblue;
+        height: 4px;
+        width: 25px;
+    }
+
+}
+/* ADJUST TOP NAV WHEN BELOW 768PX (END) */
+
+@media only screen and (max-width: 1060px) {
+    .section-2 .box-container {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    nav {
+        max-height: 70px !important;
+    }
+    nav a img {
+        max-height: 50px !important;
+    }
+    .section-1 {
+        padding-top: 40px;
+        padding-bottom: 0;
+        margin-bottom: 24px;
+        background-image: url("resources/Image1.jpg");
+        background-size: cover;
+    }
+    .section-1 div h1{
+        font-size: 20px;
+        color: white;
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+        border-bottom: 2px solid white;;
+        background-color: rgba(0, 0, 0, 0.3);
+        margin: 0 auto;
+        padding: 0 10px;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+    }
+    .section-1 div p {
+        color: white;
+        padding: 10px 10px;
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+        background-color: rgba(0, 0, 0, 0.3);
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+    }
+    .button a {
+        color: white;
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+        border: 1px solid white;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    .section-2 h1 {
+        margin-bottom: 12px;
+        font-size: 28px;
+    }
+}
+@media only screen and (min-width: 650px) {
+    .section-1 {
+    background-image: url("resources/Image-6.jpg");
+    background-color: rgba(73, 73, 73, 0.603);
+    background-blend-mode: multiply;
+    background-size: cover;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .section-1 {
+        margin-bottom: 48px;
+        padding-bottom: 48px;
+        padding-top: 96px;
+    }
+    .section-1 div h1{
+        font-size: 20px;
+        color: white;
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+        border-bottom: 2px solid white;;
+        margin: 0 auto;
+        padding: 0 10px;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+    }
+    .section-1 div p {
+        color: white;
+        padding: 10px 10px;
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.493);
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+    }
+    .button a {
+        color: white;
+        margin: 0 auto;
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+        border: 1px solid white;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .section-1 h1 {
+        font-size: 32px;
+    }
+    .section-1 {
+        background-position: bottom;
+        min-height: 500px;
+
+    }
+
+    .section-2 p {
+        font-size: larger;
+    }
+    .section-2 h1 {
+        font-size: 48px;
+    }
+    .section-2 h3 {
+        font-size: larger;
+    }
+
+    .section-3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-3 p {
+        font-size: larger;
+    }
+    .section-3 .about-codecademy, .section-3 .about-freecodecamp, .section-3 .about-odinproject, .section-3 .about-selfstudy {
+        max-width: 1600px;
+        padding-bottom: 80px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.37);
+    }
+    .section-3 .box-container {
+        display: none;
+    }
+
+    .horizontal-container {
+        display: block;
+    }
+    .section-3 .horizontal {
+        display: flex;
+        flex-direction: row;
+    }
+    .section-3 .horizontal-container h1 {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 20px;
+        border-bottom: 2px solid white;
+    }
+    .section-3 .horizontal-container button {
+        margin-top: 30px;
+    }
+    .section-3 .about-odinproject .horizontal-container h1, .section-3 .about-selfstudy .horizontal-container h1 {
+        border-bottom: 2px solid #313131;
+    }
+    .section-3 .horizontal-container .horizontal {
+        padding-right: 20px;
+    }
+    .section-3 .horizontal img {
+        max-width: 50%;
+        border-radius: 7px;
+        margin-left: 25px;
+    }
+    footer {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+}
